@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.6e50707b.css",
-    "main.js": "/test/static/js/main.488010e7.js",
-    "index.html": "/test/index.html",
-    "main.6e50707b.css.map": "/test/static/css/main.6e50707b.css.map",
-    "main.488010e7.js.map": "/test/static/js/main.488010e7.js.map"
+    "main.css": "/React_RickAndMorty/static/css/main.6e50707b.css",
+    "main.js": "/React_RickAndMorty/static/js/main.488010e7.js",
+    "index.html": "/React_RickAndMorty/index.html",
+    "main.6e50707b.css.map": "/React_RickAndMorty/static/css/main.6e50707b.css.map",
+    "main.488010e7.js.map": "/React_RickAndMorty/static/js/main.488010e7.js.map"
   },
   "entrypoints": [
     "static/css/main.6e50707b.css",
