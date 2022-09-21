@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const Characters = ({ characters }) => {
+const Characters = ({ characters, colorPicker }) => {
 
     return (
         <div className="row">
@@ -35,9 +35,6 @@ const Characters = ({ characters }) => {
 
 
             )
-
-
-
 
             )}
         </div>
