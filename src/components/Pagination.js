@@ -1,11 +1,9 @@
 import React from 'react';
 
 
-import '../styles/index.css'
 
 
 const Pagination = ({ prev, next, onPrevious, OnNext }) => {
-
 
     return (
         <nav>
