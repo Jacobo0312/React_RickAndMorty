@@ -1,18 +1,20 @@
-import React, { } from 'react'
-
-import { SketchPicker } from 'react-color';
+import React from "react";
 
 
-const Navbar = ({ tittle }) => {
+
+const Navbar = ({ tittle,colorPicker }) => {
+
+
+
+
 
     return (
         <nav className="navbar navbar-dark bg-dark ">
             <div className="container mt-2">
                 <a href="/" className="navbar-brand ">{tittle}</a>
-            </div>
-
-            <div>a
-
+                {colorPicker}
+            </div>s
+            <div>
             </div>
 
         </nav>

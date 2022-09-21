@@ -6,25 +6,15 @@ import '../styles/index.css'
 
 const Pagination = ({ prev, next, onPrevious, OnNext }) => {
 
-    const handlePrevious = () => {
-        onPrevious();
-    }
-
-    const handleNext = () => {
-        OnNext();
-    }
-
 
     return (
         <nav>
             <ul className="pagination justify-content-center">
                 {
-                    prev ? (<li className="page-item"><button className="page-link button" onClick={handlePrevious}>Previous</button></li>)
-                        : null
+                    prev && (<li className="page-item"><button className="page-link button" onClick={onPrevious}>Previous</button></li>)    
                 }
                 {
-                    next ? (<li className="page-item"><button className=" page-link button" onClick={handleNext}>Next</button></li>)
-                        : null
+                    next && (<li className="page-item"><button className=" page-link button" onClick={OnNext}>Next</button></li>)
                 }
             </ul>
 

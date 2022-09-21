@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Characters from './components/Characters';
 import Pagination from './components/Pagination';
-import { SketchPicker } from 'react-color';
+import { BlockPicker } from 'react-color';
+import Tippy from '@tippyjs/react';
 
 
 
@@ -45,36 +46,50 @@ function App() {
 
 
 
+
+
   return (
     <>
 
-      <Navbar tittle="Rick And Morty" />
-
-
-
-
-      <div className="container mt-5">
-
-        <div>
-          <button className="btn btn-secondary m-2" onClick={() => setShowColorPicker(showColorPicker => !showColorPicker)}>
+      <Navbar tittle="Characters Rick And Morty" colorPicker=
+      { <div>
+          <button className="btn btn-secondary" onClick={() => setShowColorPicker(showColorPicker => !showColorPicker)}>
             {showColorPicker ? 'Close'
               : 'Change color background'
             }</button>
 
 
-          {showColorPicker &&
-            <SketchPicker color={color} onChangeComplete={updateColor => setColor(updateColor.hex)} />
+          {showColorPicker && 
 
-          }
-          <style>{'body {background-color:' + color + ';'}</style>
+            //<Tippy interactive ={true} placement={'bottom'} content={
+            <BlockPicker 
+            color={color} 
+            onChangeComplete={updateColor => setColor(updateColor.hex)} 
+            />
+            //}></Tippy>
+      }
+          
 
-        </div>
+        </div> 
+      }/>
+
+
+      <div className="container mt-5">
+
+       
 
         <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} OnNext={OnNext} />
         <Characters characters={characters} />
         <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} OnNext={OnNext} />
 
+
+        
       </div>
+
+      <style>{'body {background-color:' + color + ';'}</style>
+
+
+
 
 
 

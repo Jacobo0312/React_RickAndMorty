@@ -12,6 +12,7 @@
     color: white;
 }
 
+
 .button:hover {
     outline: none;
     box-shadow: none;
@@ -21,6 +22,38 @@
 
 }
 
+
 .opacity {
-    opacity: 0.09;
+    opacity: 0.5;
 }
+
+
+.card{
+    background-color: darkcyan;
+    width: 240px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+.card:hover{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+
+}
+
+.card-title{
+    margin-top: 13px;
+    color: white;
+}
+
+
+
+
+
