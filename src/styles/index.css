@@ -1,0 +1,26 @@
+.button {
+    outline: none;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: black;
+    color: darkcyan;
+    font-size: 18px;
+
+}
+
+.opacity {
+    opacity: 0.2;
+}
